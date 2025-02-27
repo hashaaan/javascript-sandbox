@@ -38,9 +38,18 @@ To change the Git remote for your repository, follow these steps:
 
 5. **Add a New Remote (Optional)**
    If you prefer to add a separate remote instead of changing an existing one:
+
    ```
    git remote add <remote-name> <new-url>
    ```
+
    Replace `<remote-name>` with the desired name and `<new-url>` with the repository URL.
 
-That's it! Your Git remote is now updated.
+6. **Remove a Remote**
+   To delete an existing remote (for example, "origin"), run the following command:
+
+   ```
+   git remote remove origin
+   ```
+
+   Replace "origin" with the name of the remote you wish to remove. This command will delete the remote configuration from your repository.
